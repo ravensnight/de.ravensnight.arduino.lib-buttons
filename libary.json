@@ -1,0 +1,23 @@
+{
+  "name": "Raven's Night lib-buttons",
+  "version": "1.0.0",
+  "description": "Defines a helper for debounced buttons.",
+  "keywords": "button, debounce",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ravensnight/de.ravensnight.arduino.lib-buttons"
+  }, 
+  "authors":
+  [
+    {
+      "name": "ravensnight",
+      "email": "ravensnight@hoheisels-welt.de",
+      "url": ""
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr,espressif32"
+}
