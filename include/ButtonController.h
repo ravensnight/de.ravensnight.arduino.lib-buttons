@@ -3,10 +3,6 @@
 
 #include <Arduino.h>
 
-#ifndef MAX_BUTTON_COUNT
-    #define MAX_BUTTON_COUNT 6
-#endif
-
 typedef void (*ButtonCallback)(const uint8_t index, bool value);
 
 typedef struct {
@@ -20,14 +16,15 @@ class ButtonController {
 
     private:
 
-        Button _buttons[MAX_BUTTON_COUNT];
+        Button* _buttons = 0;
+        uint8_t _maxButtons = 0;
         uint8_t _buttonCount = 0;
         unsigned long  _debounceTime = 50;
         ButtonCallback _buttonCallback = 0;
 
     public:
 
-        ButtonController();
+        ButtonController(uint8_t maxButtons);
 
         void link(uint8_t pin);
         void update(uint8_t index);

@@ -1,8 +1,10 @@
 #include <ButtonController.h>
 
-ButtonController::ButtonController() {
+ButtonController::ButtonController(uint8_t maxButtons) {
     _buttonCallback = 0;
     _buttonCount = 0;
+    _maxButtons = maxButtons;
+    _buttons = new Button[maxButtons];
 }
 
 void ButtonController::setButtonCallback(ButtonCallback cb) {
@@ -10,7 +12,7 @@ void ButtonController::setButtonCallback(ButtonCallback cb) {
 }
 
 void ButtonController::link(uint8_t pin) {
-    if (_buttonCount < MAX_BUTTON_COUNT) {
+    if (_buttonCount < _maxButtons) {
         _buttons[_buttonCount].pin = pin;
         _buttons[_buttonCount].state = (digitalRead(pin) == 0);   
 
