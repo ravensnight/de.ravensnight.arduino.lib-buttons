@@ -1,5 +1,5 @@
 {
-  "name": "ravensnight/lib-buttons",
+  "name": "ravensnight lib-buttons",
   "version": "1.0.0",
   "description": "Defines a helper for debounced buttons.",
   "keywords": "button, debounce",
@@ -16,8 +16,7 @@
     }
   ],
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": [],
   "frameworks": "arduino",
   "platforms": "atmelavr,espressif32"
 }
