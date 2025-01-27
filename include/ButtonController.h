@@ -5,9 +5,9 @@
 
 #ifndef MAX_BUTTON_COUNT
     #define MAX_BUTTON_COUNT 6
-    #pragma message "Assuming default number of buttons:  " MAX_BUTTON_COUNT
+    #pragma message( "Assuming default number of buttons:  " MAX_BUTTON_COUNT )
 #else
-    #pragma message "Override default number of buttons. New count:  " MAX_BUTTON_COUNT
+    #pragma message( "Override default number of buttons. New count:  " MAX_BUTTON_COUNT )
 #endif
 
 typedef void (*ButtonCallback)(const uint8_t index, bool value);
