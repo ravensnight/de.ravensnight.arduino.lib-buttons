@@ -1,6 +1,6 @@
 {
   "name": "ravensnight lib-buttons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Defines a helper for debounced buttons.",
   "keywords": "button, debounce",
   "repository" : {
